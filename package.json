@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-mvc",
+  "version": "1.0.0",
+  "description": "Simple Nodejs MVC approach",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loremZyn14/nodejs-mvc.git"
+  },
+  "author": "Lorem Zyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loremZyn14/nodejs-mvc/issues"
+  },
+  "homepage": "https://github.com/loremZyn14/nodejs-mvc#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
