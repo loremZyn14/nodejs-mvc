@@ -14,7 +14,7 @@
             <% for(let i = 0; i < todos.length;i++){ %>
                 <tr>
                     <td> <%= todos[i].name %></td>
-                    <td> <a href="/delete/<%=[i]%>">delete</a></td>
+                    <td> <a href="/delete/<%=i%>">delete</a></td>
                 </tr>
             <%}%>
         </tbody>
