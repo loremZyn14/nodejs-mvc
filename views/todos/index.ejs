@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo List</title>
+</head>
+
+<body>
+    <h1>Simple Todo List </h1>
+    <table>
+        <tbody>
+            <% for(let i = 0; i < todos.length;i++){ %>
+                <tr>
+                    <td> <%= todos[i].name %></td>
+                    <td> <a href="/delete/<%=[i]%>">delete</a></td>
+                </tr>
+            <%}%>
+        </tbody>
+    </table>
+    
+    <form action="/add" method="post">
+        <label for="Name">Name</label>
+        <input type="text" name="name">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
