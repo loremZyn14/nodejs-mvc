@@ -12,7 +12,7 @@ var todos = [
     { name: "Clean" }
 ]
 app.get('/', (request, response) => {
-
+    // response.send('test')
     response.render('todos/index', { todos: todos })
 
 })
@@ -30,7 +30,4 @@ app.get('/delete/:id', urlEncodeParser, (request, response) => {
 
 })
 
-app.listen(port, () => {
-    console.log(`App is running at port ${port}`)
-})
-
+app.listen(3000)
